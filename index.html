@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mi Portafolio</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Menú -->
+    <header class="header">
+        <div class="header__brand">
+            <img class="header__logo" src="assets/vector.png" alt="Logo">
+            <h1 class="header__title">Marco Scalzo</h1>
+        </div>        
+        <nav class="header__nav" role="navigation">
+            <ul class="header__nav__list">
+                <li class="header__nav__element"><a href="#skills">Competencias</a></li>
+                <li class="header__nav__element"><a href="#hobbies">Hobbies</a></li>
+                <li class="header__nav__element"><a href="#training">Formación</a></li>
+                <li class="header__nav__element"><a href="#projects">Proyectos</a></li>
+                <li class="header__nav__element"><a href="mailto:scalzomarco98@gmail.com">scalzomarco98@gmail.com</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Presentación -->
+    <section class="presentation">
+        <img class="presentation__photo" src="./assets/profile_picture.png" alt="Foto de perfil">
+        <div class="presentation__container">
+            <h2 class="presentation__title">Progamador Marco Scalzo</h2>
+            <p class="presentation__subtitle">Formación en programación Full Stack Developer; Front-end y Back-end. Actualmente estoy en busqueda de oportunidades laborales en el ámbito IT mientras continuo capacitandome en las nuevas tecnologías.</p>
+            <ul class="social__media">
+                <li class="social__media__img"><a href="https://github.com/" target="_blank"><img href="https://github.com/" src="./assets/github_logo.png" alt="Github Logo"></a><a href="">Github</a></li>
+                <li class="social__media__img"><a href="https://www.linkedin.com/in/marco-scalzo-7459a3246/" target="_blank"><img src="./assets/linkedin_logo.png" alt="Linkedin Logo"></a><a href="">Linkedin</a></li>
+                <li class="social__media__img"><a href="https://www.instagram.com/scalzomarco/" target="_blank"><img href="" src="./assets/instagram_logo.png" alt="Instagram Logo"></a><a href="">Instagram</a></li>
+                <li class="social__media__img"><a href="" target="_blank"><img href="" src="./assets/pdf_logo.png" alt="PDF Logo"></a><a href="">Curriculum</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section class="about__me" id="about__me">
+        <button id="aboutmeBtn">
+            <h2 class="about__me__title">Sobre mí</h2>
+        </button>
+        <div id="aboutmeToggle" class="hidden">
+            <p class="about__me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.</p>
+            <p class="about__me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+            <img class="about__me__firm" src="assets/signature.png" alt="Firma">
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section class="skills" id="skills">
+        <button id="skillsBtn">
+            <h2 class="skills__title">Competencias</h2>
+        </button>  
+        <div id="skillsToggle" class="hidden">
+            <ul class="skills__list">
+                <li class="skills__element">
+                    <img class="skills__icon" src="assets/html.png" alt="HTML">
+                    <p class="skills__name">VSCode</p>
+                </li>
+                <li class="skills__element">
+                    <img class="skills__icon" src="assets/html.png" alt="HTML">
+                    <p class="skills__name">IntelliJ</p>
+                </li>
+                <li class="skills__element">
+                    <img class="skills__icon" src="assets/html.png" alt="HTML">
+                    <p class="skills__name">Spring Framework</p>
+                </li>
+                <li class="skills__element">
+                    <img class="skills__icon" src="assets/js_icon.png" alt="JavaScript">
+                    <p class="skills__name">JavaScript</p>
+                </li>
+                <li class="skills__element">
+                    <img class="skills__icon" src="assets/php_icon.png" alt="PHP">
+                    <p class="skills__name">HTML 5</p>
+                </li>
+                <li class="skills__element">
+                    <img class="skills__icon" src="assets/nodejs_icon.png" alt="Node.js">
+                    <p class="skills__name">CSS</p>
+                </li>
+                <li class="skills__element">
+                    <img class="skills__icon" src="assets/react_icon.png" alt="React">
+                    <p class="skills__name">API REST</p>
+                </li>
+                <li class="skills__element">
+                    <img class="skills__icon" src="assets/css_icon.png" alt="CSS">
+                    <p class="skills__name">P5.js</p>
+                </li>
+            </ul>
+        </div>  
+    </section>
+
+    <!-- Sección de Hobbies -->
+    <section class="hobbies" id="hobbies">
+        <button id="hobbiesBtn">
+            <h2 class="hobbies__title">Hobbies</h2>
+        </button>
+        <div id="hobbiesToggle" class="hidden hobbiesToggle">
+            <ul class="hobbies__list">
+                <li class="hobbies__element" data-hobby="gaming">                
+                        <img class="hobbies__icon" src="assets/hobbies_wow_icon.png" alt="Icono de World of Warcraft">
+                        <p class="hobbies__name">Gaming</p>                   
+                </li>
+                <li class="hobbies__element" data-hobby="calistenia">
+                        <img class="hobbies__icon" src="assets/chalistenics_icon.png" alt="Icono de Calistenia">
+                        <p class="hobbies__name">Calistenia</p>
+                </li>
+                <li class="hobbies__element" data-hobby="musica">
+                        <img class="hobbies__icon" src="assets/li_music_icon.png" alt="Icono de Spotify">
+                        <p class="hobbies__name">Música</p>
+                </li>
+                <li class="hobbies__element" data-hobby="anime">
+                        <img class="hobbies__icon" src="assets/li_berserk_icon.png" alt="Icono de Berserk">
+                        <p class="hobbies__name">Animé</p>
+                </li>
+                <li class="hobbies__element" data-hobby="escribir">
+                        <img class="hobbies__icon" src="assets/li_escribir_icon.png" alt="Escritura en poesía">
+                        <p class="hobbies__name">Escribir</p>
+                </li>
+                <li class="hobbies__element" data-hobby="idiomas">
+                        <img class="hobbies__icon" src="assets/li_duolingo_icon.png" alt="Icono de Duolingo">
+                        <p class="hobbies__name">Idiomas</p>
+                </li>
+            </ul>
+            <aside class="hobbies__aside" id="hobbiesAside">                
+                <p class="hobbies__name" style="text-align: center; font-weight: bold;">¡Seleccioná un hobby!</p>    
+            </aside>
+        </div>
+    </section>
+
+    <!-- Sección de Formación académica -->
+    <section class="training" id="training">
+        <button id="trainingBtn">
+            <h2 class="training__title">Formación académica</h2>
+        </button>
+        <div id="trainingToggle" class="hidden">
+            <ul class="training__list">
+                <li class="training__element">
+                    <img class="training__icon" src="./assets/alura_oracle_logo.png" alt="UFPR">
+                    <div class="training__description">
+                        <h3 class="training__name">Full-Stack Alura-Oracle (2022-Presente)(En Curso)</h3>
+                    </div>
+                </li>
+                <li class="training__element">
+                    <img class="training__icon" src="./assets/teclab_logo.svg" alt="Alura">
+                    <div class="training__description">
+                        <h3 class="training__name">Tecnicatura en Programación (2022-2024)(Recibido)</h3>
+                    </div>
+                </li>
+                <li class="training__element">
+                    <img class="training__icon" src="./assets/isft_194_logo.jpeg" alt="UFRJ">
+                    <div class="training__description">
+                        <h3 class="training__name">Tecnicatura en Seguridad e Higiene (2017-2020)(Cursado)</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section class="projects" id="projects">
+        <button id="projectsBtn">
+            <h2 class="projects__title">Experiencia Profesional</h2>
+        </button>
+        <div id="projectsToggle" class="hidden">
+            <div class="projects__container">
+                <img>
+                <h3 class="projects__name">Título de la Experiencia</h3>
+                <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+                <nav class="projects__nav">
+                    <a href="www.github.com" class="projects__button">Repositorio</a>
+                    <a href="www.github.com" class="projects__button">Ver demo</a>
+                </nav>
+            </div>
+            <div class="projects__container">
+                <img>
+                <h3 class="projects__name">Título de la Experiencia</h3>
+                <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+                <nav class="projects__nav">
+                    <a href="www.github.com" class="projects__button">Repositorio</a>
+                    <a href="www.github.com" class="projects__button">Ver demo</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contact -->
+    <section class="contact" id="contact">
+        <h2 class="contact__title">Contacto</h2>
+        <p>¿Querés contactarme? Contesto mensajes las 16 horas que dura el día.</p>
+
+        <form class="contact__form" id="contactForm">            
+            <input class="contact__area" type="text" name="from_name" id="from_name" placeholder="Nombre" required>
+            <input class="contact__area" type="email" name="reply_to" id="reply_to" placeholder="Su Correo Electrónico" required>
+            <textarea class="contact__area contact__area--textarea" name="message" id="message" placeholder="Mensaje que desea comunicar" required></textarea>
+            <button class="contact__btn" type="submit" id="formBtn">Enviar</button>
+        </form>
+    </section>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("gGfoALCGKoSP4T90a");
+        })();
+    </script>
+</body>
+<footer>
+    <a href="#top">Desarrollado por Marco Scalzo Circa-2024</a>
+</footer>
+</html>
