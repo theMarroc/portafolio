@@ -27,6 +27,14 @@ a {
 .hidden {
     display: none;
 }
+/*-------------------------------Whatsapp-------------------------------*/
+
+.whatsapp_icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    
+}
 /* ------------------------------ Header -------------------------------*/
 
 header img {
@@ -39,18 +47,22 @@ header img {
     right: 0;
     left: 0;
     display: flex;
-    align-items: center;   
+    align-items: center;
     background-color: var(--background-4);
     justify-content: space-between;
     padding: 1rem;
 }
 .header__brand {
+    width: 100%;
     display: flex;
-    gap: 0.2rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 2rem 0 2rem;
 }
 
 .header__title {
-    font-size: 1.2rem;
+    font-size: 2rem;
     align-items: start;
 }
 .header__nav {
@@ -60,7 +72,7 @@ header img {
     display: none;
 }
 .header__nav__element:nth-child(5) {
-    display: block;
+    display: none;
 }
 /* ------------------------------ Presentation Section -------------------------------*/
 .presentation {
@@ -72,6 +84,8 @@ header img {
 .presentation__photo {
     width: 120px;
     height: 120px;
+    border-radius: 50%;
+    margin-top: 1.5rem;
 }
 .presentation__container {
     display: flex;
@@ -216,7 +230,7 @@ header img {
 .hobbies__aside {
     margin-top: 6px;
     background-color: #FFFFFF;
-    height: 300px;
+    height: 400px;
 }
 .hidden {
     display: none;
@@ -377,7 +391,7 @@ header img {
 
 footer {
     height: 50px;
-    align-items: center;   
+    align-items: center;
     background-color: var(--background-4);
     display: flex;
     flex-direction: column;
@@ -400,15 +414,18 @@ footer a {
     .header {
         position: initial;
         display: flex;
-        align-items: center;   
+        align-items: center;
         background-color: var(--background-4);
         justify-content: space-between;
         padding: 1rem;
         gap: 1%;
         font-weight: bold;
     }
+    .header__title {
+        font-size: 2rem;
+    }
     header img {
-        display: initial;
+        display: none;
     }
     .header__nav {
         align-items: center;
@@ -435,6 +452,7 @@ footer a {
     .presentation__photo {
         width: 256px;
         height: 256px;
+        margin-bottom: 1.5rem;
     }
     .skills__element {
         flex-basis: 23.5%;
@@ -498,5 +516,11 @@ footer a {
     }
     .hobbies__aside {
         padding: 2%;
+    }
+    .whatsapp_icon {
+        display: block;
+        width: 48px;
+        height: 48px;
+        
     }
 }

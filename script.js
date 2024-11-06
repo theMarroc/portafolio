@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 }) 
 
-/*Código de cada seccion colapsable-------------------------------------------*/
+/*Código del aside de los hobbies-------------------------------------------*/
 
 document.addEventListener("DOMContentLoaded", () => {
     const aside = document.querySelector('#hobbiesAside');
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         calistenia: {
             image: `<img style="height:60%;  width:100%" src="./assets/li_calistenia.jpg" alt="Calistenia">`,
             title: `<h3>Calistenia</h3>`,
-            content: `<p style="font-family: 'Roboto', sans-serif; text-align:justify;">La calistenia consiste en la formación de un proceso físico y mental en cual se involucran diferentes calentamientos de peso corporal o ejercicios de entrenamientos callejeros y espacios libres. Etimológicamente la palabra proviene del griego kalos (belleza) y sthenos (fortaleza).</p>`
+            content: `<p style="font-family: 'Roboto', sans-serif; text-align:justify;">La calistenia es un proceso físico y mental en cual se involucran diferentes ejercicios de peso corporal y espacios libres. Etimológicamente la palabra proviene del griego kalos (belleza) y sthenos (fortaleza).</p>`
         },
         musica: {
             video: `<iframe width="100%" height="60%" src="https://www.youtube.com/embed/LL7yklrrnzs?si=sqazs0hCpHIOSAN8"></iframe>`,

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Mi Portafolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/html.png">
     <script src="script.js" defer></script>
 </head>
 
@@ -14,8 +15,10 @@
     <!-- Menú -->
     <header class="header">
         <div class="header__brand">
-            <img class="header__logo" src="assets/vector.png" alt="Logo">
             <h1 class="header__title">Marco Scalzo</h1>
+            <a href="https://wa.me/5492291512866?text=Hola%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios" target="_blank">
+                <img src="./assets/whatsapp.png" alt="WhatsApp Logo" class="whatsapp_icon">
+            </a>
         </div>        
         <nav class="header__nav" role="navigation">
             <ul class="header__nav__list">
@@ -27,18 +30,20 @@
             </ul>
         </nav>
     </header>
+    
 
     <!-- Sección de Presentación -->
+
     <section class="presentation">
-        <img class="presentation__photo" src="./assets/profile_picture.png" alt="Foto de perfil">
+        <img class="presentation__photo" src="./assets/marco.jpg" alt="Foto de perfil de Marco">
         <div class="presentation__container">
             <h2 class="presentation__title">Progamador Marco Scalzo</h2>
-            <p class="presentation__subtitle">Formación en programación Full Stack Developer; Front-end y Back-end. Actualmente estoy en busqueda de oportunidades laborales en el ámbito IT mientras continuo capacitandome en las nuevas tecnologías.</p>
+            <p class="presentation__subtitle">Formación en programación Full Stack Developer; Front-end y Back-end. Actualmente estoy en busqueda de oportunidades laborales en el ámbito IT mientras continuo capacitandome en las nuevas tecnologías del mercado.</p>
             <ul class="social__media">
-                <li class="social__media__img"><a href="https://github.com/" target="_blank"><img href="https://github.com/" src="./assets/github_logo.png" alt="Github Logo"></a><a href="">Github</a></li>
-                <li class="social__media__img"><a href="https://www.linkedin.com/in/marco-scalzo-7459a3246/" target="_blank"><img src="./assets/linkedin_logo.png" alt="Linkedin Logo"></a><a href="">Linkedin</a></li>
-                <li class="social__media__img"><a href="https://www.instagram.com/scalzomarco/" target="_blank"><img href="" src="./assets/instagram_logo.png" alt="Instagram Logo"></a><a href="">Instagram</a></li>
-                <li class="social__media__img"><a href="" target="_blank"><img href="" src="./assets/pdf_logo.png" alt="PDF Logo"></a><a href="">Curriculum</a></li>
+                <li class="social__media__img"><a href="https://github.com/" target="_blank"><img src="./assets/github_logo.png" alt="Github Logo"></a><a href="https://github.com/">Github</a></li>
+                <li class="social__media__img"><a href="https://www.linkedin.com/in/marco-scalzo-7459a3246/" target="_blank"><img src="./assets/linkedin_logo.png" alt="Linkedin Logo"></a><a href="https://www.linkedin.com/in/marco-scalzo-7459a3246/">Linkedin</a></li>
+                <li class="social__media__img"><a href="https://www.instagram.com/scalzomarco/" target="_blank"><img src="./assets/instagram_logo.png" alt="Instagram Logo"></a><a href="https://www.instagram.com/scalzomarco/">Instagram</a></li>
+                <li class="social__media__img"><a href="./assets/cv_marco.pdf" download="Curriculum Vitae de Marco Scalzo.pdf" target="_blank"><img src="./assets/pdf_logo.png" alt="PDF Logo"></a><a href="./assets/cv_marco.pdf" download="Curriculum Vitae de Marco Scalzo.pdf">Curriculum</a></li>
             </ul>
         </div>
     </section>
@@ -49,9 +54,9 @@
             <h2 class="about__me__title">Sobre mí</h2>
         </button>
         <div id="aboutmeToggle" class="hidden">
-            <p class="about__me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.</p>
-            <p class="about__me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-            <img class="about__me__firm" src="assets/signature.png" alt="Firma">
+            <p class="about__me__text">Hola, soy Marco, programador full stack con una pasión por crear experiencias digitales que combinan funcionalidad y diseño intuitivo. Con un enfoque versátil en el desarrollo web, me especializo en construir aplicaciones robustas y eficientes, desde el diseño de interfaces atractivas hasta la implementación de sistemas complejos en el back-end. La curiosidad y la dedicación me impulsan a seguir aprendiendo y mejorando constantemente mis habilidades para resolver problemas de la mejor manera.</p>
+            <p class="about__me__text">Como gamer y alguien que valora las conexiones profundas, entiendo la importancia de crear soluciones que sean tanto funcionales como significativas. Me esfuerzo por integrar el conocimiento que he adquirido de mis intereses y experiencias para aportar un valor genuino a cada proyecto que realizo.</p>
+            <img class="about__me__firm" src="assets/firma.png" alt="Firma">
         </div>
     </section>
 
@@ -63,39 +68,69 @@
         <div id="skillsToggle" class="hidden">
             <ul class="skills__list">
                 <li class="skills__element">
-                    <img class="skills__icon" src="assets/html.png" alt="HTML">
+                    <img class="skills__icon" src="assets/vscode.png" alt="HTML">
                     <p class="skills__name">VSCode</p>
                 </li>
                 <li class="skills__element">
-                    <img class="skills__icon" src="assets/html.png" alt="HTML">
+                    <img class="skills__icon" src="assets/IntelliJ_IDEA_icon.png" alt="HTML">
                     <p class="skills__name">IntelliJ</p>
                 </li>
                 <li class="skills__element">
-                    <img class="skills__icon" src="assets/html.png" alt="HTML">
+                    <img class="skills__icon" src="assets/spring.png" alt="HTML">
                     <p class="skills__name">Spring Framework</p>
                 </li>
                 <li class="skills__element">
-                    <img class="skills__icon" src="assets/js_icon.png" alt="JavaScript">
+                    <img class="skills__icon" src="assets/JavaScript-logo.png" alt="JavaScript">
                     <p class="skills__name">JavaScript</p>
                 </li>
                 <li class="skills__element">
-                    <img class="skills__icon" src="assets/php_icon.png" alt="PHP">
+                    <img class="skills__icon" src="assets/html-5.png" alt="PHP">
                     <p class="skills__name">HTML 5</p>
                 </li>
                 <li class="skills__element">
-                    <img class="skills__icon" src="assets/nodejs_icon.png" alt="Node.js">
+                    <img class="skills__icon" src="assets/CSS3_logo.svg" alt="Node.js">
                     <p class="skills__name">CSS</p>
                 </li>
                 <li class="skills__element">
-                    <img class="skills__icon" src="assets/react_icon.png" alt="React">
+                    <img class="skills__icon" src="assets/rest-api.png" alt="React">
                     <p class="skills__name">API REST</p>
                 </li>
                 <li class="skills__element">
-                    <img class="skills__icon" src="assets/css_icon.png" alt="CSS">
+                    <img class="skills__icon" src="assets/P5.js_icon.svg" alt="CSS">
                     <p class="skills__name">P5.js</p>
                 </li>
             </ul>
         </div>  
+    </section>
+
+    <!-- Sección de Formación académica -->
+
+    <section class="training" id="training">
+        <button id="trainingBtn">
+            <h2 class="training__title">Formación académica</h2>
+        </button>
+        <div id="trainingToggle" class="hidden">
+            <ul class="training__list">
+                <li class="training__element">
+                    <img class="training__icon" src="./assets/alura_oracle_logo.png" alt="UFPR">
+                    <div class="training__description">
+                        <h3 class="training__name">Full-Stack Alura-Oracle (2022-Presente)(En Curso)</h3>
+                    </div>
+                </li>
+                <li class="training__element">
+                    <img class="training__icon" src="./assets/teclab_logo.svg" alt="Alura">
+                    <div class="training__description">
+                        <h3 class="training__name">Tecnicatura en Programación (2022-2024)(Recibido)</h3>
+                    </div>
+                </li>
+                <li class="training__element">
+                    <img class="training__icon" src="./assets/isft_194_logo.jpeg" alt="UFRJ">
+                    <div class="training__description">
+                        <h3 class="training__name">Tecnicatura en Seguridad e Higiene (2017-2020)(Cursado)</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- Sección de Hobbies -->
@@ -136,37 +171,9 @@
         </div>
     </section>
 
-    <!-- Sección de Formación académica -->
-    <section class="training" id="training">
-        <button id="trainingBtn">
-            <h2 class="training__title">Formación académica</h2>
-        </button>
-        <div id="trainingToggle" class="hidden">
-            <ul class="training__list">
-                <li class="training__element">
-                    <img class="training__icon" src="./assets/alura_oracle_logo.png" alt="UFPR">
-                    <div class="training__description">
-                        <h3 class="training__name">Full-Stack Alura-Oracle (2022-Presente)(En Curso)</h3>
-                    </div>
-                </li>
-                <li class="training__element">
-                    <img class="training__icon" src="./assets/teclab_logo.svg" alt="Alura">
-                    <div class="training__description">
-                        <h3 class="training__name">Tecnicatura en Programación (2022-2024)(Recibido)</h3>
-                    </div>
-                </li>
-                <li class="training__element">
-                    <img class="training__icon" src="./assets/isft_194_logo.jpeg" alt="UFRJ">
-                    <div class="training__description">
-                        <h3 class="training__name">Tecnicatura en Seguridad e Higiene (2017-2020)(Cursado)</h3>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
     <!-- Sección de Proyectos -->
-    <section class="projects" id="projects">
+     
+    <!-- <section class="projects" id="projects">
         <button id="projectsBtn">
             <h2 class="projects__title">Experiencia Profesional</h2>
         </button>
@@ -190,7 +197,7 @@
                 </nav>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Sección de contact -->
     <section class="contact" id="contact">
