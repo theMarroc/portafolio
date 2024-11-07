@@ -9,6 +9,9 @@
     <title>Mi Portafolio</title>
     <link rel="icon" type="image/x-icon" href="./assets/html.png">
     <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="juego.js" defer></script>
 </head>
 
 <body>
@@ -173,12 +176,22 @@
 
     <!-- Sección de Proyectos -->
      
-    <!-- <section class="projects" id="projects">
+    <section class="projects" id="projects">
         <button id="projectsBtn">
             <h2 class="projects__title">Experiencia Profesional</h2>
         </button>
         <div id="projectsToggle" class="hidden">
-            <div class="projects__container">
+            <div class="projects__container" id="">
+                <img>
+                <h3 class="projects__name">Juego de Pong creado con P5.js</h3>
+                <p class="projects__description">Hecho con prompt engineering ¡W y S para jugar!</p>
+                <div class="projects__juego" id="juego"></div>
+                <nav class="projects__nav">
+                    <a href="www.github.com" class="projects__button">Repositorio</a>
+                    <button class="projects__button" id="startButton">Ver demo</button>
+                </nav>
+            </div>
+            <!-- <div class="projects__container">
                 <img>
                 <h3 class="projects__name">Título de la Experiencia</h3>
                 <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
@@ -186,18 +199,9 @@
                     <a href="www.github.com" class="projects__button">Repositorio</a>
                     <a href="www.github.com" class="projects__button">Ver demo</a>
                 </nav>
-            </div>
-            <div class="projects__container">
-                <img>
-                <h3 class="projects__name">Título de la Experiencia</h3>
-                <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
-                <nav class="projects__nav">
-                    <a href="www.github.com" class="projects__button">Repositorio</a>
-                    <a href="www.github.com" class="projects__button">Ver demo</a>
-                </nav>
-            </div>
+            </div> -->
         </div>
-    </section> -->
+    </section>
 
     <!-- Sección de contact -->
     <section class="contact" id="contact">
