@@ -3,7 +3,7 @@ let altoCanvas = 400;
 
 let jugadorX = 15;
 let jugadorY;
-let anchoRaqueta = 10;
+let anchoRaqueta = anchoCanvas / 50
 let altoRaqueta = 90;
 
 let computadoraX = anchoCanvas - 25;
@@ -11,8 +11,8 @@ let computadoraY;
 
 let pelotaX, pelotaY;
 let diametroPelota = 20;
-let velocidadPelotaX = 5;
-let velocidadPelotaY = 5;
+let velocidadPelotaX = 10;
+let velocidadPelotaY = 10;
 let anguloPelota = 0;
 
 let grosorMarco = 10;
@@ -32,13 +32,20 @@ function preload() {
   barraJugador = loadImage("./assets/juego/barra1.png");
   barraComputadora = loadImage("./assets/juego/barra2.png");
   bola = loadImage("./assets/juego/bola.png");
-  sonidoRebote = loadSound("./assets/juego/bounce.wav" , () => sonidoRebote.setVolume(0.5));
-  sonidoGol = loadSound("./assets/juego/jingle_win_synth.wav" , () => sonidoGol.setVolume(0.5));
+  sonidoRebote = loadSound("./assets/juego/bounce.wav" , () => sonidoRebote.setVolume(0.2));
+  sonidoGol = loadSound("./assets/juego/jingle_win_synth.wav" , () => sonidoGol.setVolume(0.2));
 }
 
 function setup() {
-  
+  let canvas = createCanvas(0, 0);
+    canvas.parent('juego');
+    
 }
+let canvas;
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("startButton").click();
+});
+
 
 function draw() {
   background(fondo);
@@ -50,6 +57,7 @@ function draw() {
   moverComputadora();
   verificarColisiones();
 }
+
 
 function startGame() {
   // Crear el canvas dentro del contenedor con id 'juego'
@@ -112,7 +120,7 @@ function dibujarPelota() {
 }
 
 function mostrarPuntaje() {
-  textSize(32);
+  textSize(48);
   textAlign(CENTER, CENTER);
   fill(color("#2B3FD6"));
   text(jugadorScore, width / 4, grosorMarco * 3);
@@ -194,7 +202,7 @@ function verificarColisiones() {
 
 function narrarMarcador() {
   let narrador = new SpeechSynthesisUtterance(
-    `El marcador es ${jugadorScore} a ${computadoraScore}`
+  `El marcador es ${jugadorScore} a ${computadoraScore}`
   );
   window.speechSynthesis.speak(narrador);
 }
@@ -209,9 +217,9 @@ function resetPelota() {
 
 function keyPressed() {
   if (key === "w" || key === "W") {
-    jugadorY -= 40;
+    jugadorY -= 20;
   } else if (key === "s" || key === "S") {
-    jugadorY += 40;
+    jugadorY += 20;
   }
   jugadorY = constrain(
     jugadorY,
@@ -220,18 +228,20 @@ function keyPressed() {
   );
 }
 
-function touchMoved() {
-  // Si el toque está en la mitad superior del canvas
-  if (touchY < height / 2) {
-    jugadorY -= 40; // Mover la raqueta hacia arriba
+function touchStarted() {
+  // Obtener la posición del toque en el eje Y
+  let touchPosY = mouseY;
+  
+  // Verificar si el toque está en la mitad superior o inferior del canvas
+  if (touchPosY < height / 2) {
+    // Si está en la mitad superior, mover la raqueta hacia arriba
+    jugadorY -= 10;
+  } else {
+    // Si está en la mitad inferior, mover la raqueta hacia abajo
+    jugadorY += 10;
   }
-  // Si el toque está en la mitad inferior del canvas
-  else {
-    jugadorY += 40; // Mover la raqueta hacia abajo
-  }
-
-  // Limitar la raqueta para que no se salga del canvas
-  jugadorY = constrain(jugadorY, 0, height - altoRaqueta);
-
-  return false; // Evita el desplazamiento de la página
+  
+  // Asegurarse de que la raqueta no se salga del canvas
+  jugadorY = constrain(jugadorY, grosorMarco, height - grosorMarco - altoRaqueta);
+  
 }

@@ -14,7 +14,10 @@ canvas {
     justify-content: center;
     align-items: center;
     align-self: center;
-  }  
+}  
+.p5Canvas {
+    display: hidden;
+}
 body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;

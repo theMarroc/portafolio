@@ -140,3 +140,14 @@ document.getElementById('contactForm')
 });
 
 /*Código de los botones de proyecto-------------------------------------*/
+
+const demoFrontend = document.getElementById("frontendButton");
+const iframeFrontend = document.querySelector("#frontendId");
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("frontendButton").click();
+  });
+
+demoFrontend.addEventListener("click", function() {
+    iframeFrontend.toggleAttribute('hidden');
+})
